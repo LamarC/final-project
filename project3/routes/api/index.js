@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const auroraRoutes = require("./aurora");
+const infoRoutes = require("./info");
 
 // Book routes
-router.use("/aurora", auroraRoutes);
+router.use("/info", infoRoutes);
 
 module.exports = router;
