@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 // import fetch from "fetch";
-import "./apod.css";
+// import "./apod.css";
 
 
 class nasaimages extends React.Component {

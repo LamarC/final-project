@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "./apod.css";
+// import "./apod.css";
 import { Container, Card, CardImg, CardText, CardBody,
   CardTitle} from 'reactstrap';
 

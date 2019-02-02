@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navtabs.css";
+// import "./Navtabs.css";
 
 function NavTabs() {
   return (
