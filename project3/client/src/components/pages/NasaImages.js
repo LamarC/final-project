@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-// import "./apod.css";
-import { Container, Card, CardImg, CardText, CardBody,
+// import "./Nasaimages.css";
+import {Card, CardImg, CardText, CardBody,
   CardTitle} from 'reactstrap';
 
 
@@ -57,13 +57,10 @@ class NasaImages extends React.Component {
           });
         }
       )
-      
     }
 
-  
-   
   render() {
-    const { error, isLoaded, items } = this.state;
+    const { error, isLoaded } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -71,11 +68,10 @@ class NasaImages extends React.Component {
     } else {
       return (
         <div>
-          <Container>
-            
+          
         {this.state.descriptions.map(function(item){
-          return <Card>
-          <CardImg top width="100%" src={item.thumbLink} alt="Card image cap" />
+          return <Card className="Nasaimgcard">
+          <CardImg top width="50%" src={item.thumbLink} alt="Card image cap" />
           <CardBody>
             <CardTitle>{item.location}</CardTitle>
             
@@ -84,13 +80,9 @@ class NasaImages extends React.Component {
           </CardBody>
         </Card>
         })}
-          </Container>
-        
-        
-       
-        </div>
+
+         </div>
       );
-    
     }
   }
 }

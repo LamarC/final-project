@@ -1,10 +1,12 @@
 import React from "react";
 import axios from "axios";
 // import fetch from "fetch";
-// import "./apod.css";
+// import "./Apod.css";
+import { Container, Card, CardImg, CardText, CardBody,
+  CardTitle} from 'reactstrap';
 
 
-class nasaimages extends React.Component {
+class Apod extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,15 +50,24 @@ class nasaimages extends React.Component {
     } else {
       return (
         <div>
-        <h1>{items.title}</h1>
-        <img className="Apodimg" alt="Nasa Library" src={items.hdurl}></img>
-        <h5>Copyright: {items.copyright}</h5>
-        <br></br>
-        <p className="ApodP col-sm-8"><strong>Explanation: </strong>{items.explanation}</p>
+        <h1 className="Apodh1">{items.title}</h1>
+        <Container>
+            
+       <Card>
+          <CardImg top width="50%" src={items.hdurl} alt="Card image cap" />
+          <CardBody>
+            <CardTitle>Copyright: {items.copyright}</CardTitle> 
+            
+            <CardText>{items.explanation}</CardText>
+            
+          </CardBody>
+        </Card>
+        
+          </Container>
         </div>
       );
     }
   }
 }
 
-export default nasaimages;
+export default Apod;
