@@ -1,0 +1,30 @@
+.Articleh1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+  }
+  
+  
+  
+  .Articleh2 {
+      text-align: center;
+      color: white;
+      padding-top: 20px;
+      padding: 20px;
+  }
+  
+  .Articlep {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      padding: 3px;
+      margin-left: 400px;
+      margin-right: 400px;
+      
+  }
+  
+  Articlea {
+      font: 45px;
+      padding-top: 20px;
+      padding: 20px;
+  }
